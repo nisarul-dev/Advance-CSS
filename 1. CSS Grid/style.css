@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fbfbfb;
+} 
+
+.wrapper {
+    width: 90%;
+    margin: 100px auto;
+    /* Turning ON the GRID System of CSS */
+    /* css গ্রিড সিস্ট্রম চালু করে */ 
+    display: grid;
+    
+    
+    /* Specifing the number of column as well as Coloumn size */
+    /* কলাম সংখ্যা ও তার সাইজ নির্ধারণ করে */
+    grid-template-columns: 1fr 1fr 2fr; /* fr stands for fraction, we can use px also */
+    
+    /* Maintaining gap between column and rows */
+    /* কলাম ও রো এর মধ্যে দূরত্ব তৈরি করে */
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    
+    /* Controling the size of rows in specific and auto */
+    /* নির্দিষ্ট রো সাইজ বা অটোমেটিক রো সাইজ নির্ধারণ করে */
+    grid-template-rows: 75px 100px;
+    grid-auto-rows: 50px;
+}
+
+.item {
+    background: #0067ff;
+    color: white;
+    padding: 10px;
+}
+
+.item:nth-child(even) {
+    background: #ff8e00;
+}
+
+/* গরিবের col-span and row-span */
+.item11 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item12 {
+    grid-row: span 2;
+}
+
+
+
+

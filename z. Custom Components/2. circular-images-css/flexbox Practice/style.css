@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #e5e5e5;
+    min-height: 100vh;
+}
+
+.first-section {
+    display: flex;
+    justify-content: center;
+    min-height: 30vh;
+    align-items: flex-start
+}
+
+.middle-section {
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+    align-items: center;
+}
+
+.second-section {
+    display: flex;
+    min-height: 30vh;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.flex-item {
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid gray;
+    background: #727272;
+}
